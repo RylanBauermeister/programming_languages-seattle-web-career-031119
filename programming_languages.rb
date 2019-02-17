@@ -3,9 +3,14 @@ def reformat_languages(languages)
   result = {}
   languages.each do |style, langs|
     language.each do |lang, types|
-      result[lang] = {
-        type: types.values()
-      }
+      if(result[lang])
+        result[:style] << style
+      else 
+        result[lang] = {
+          type: types.values,
+          style: style
+        }
+      end
     end
   end
   
