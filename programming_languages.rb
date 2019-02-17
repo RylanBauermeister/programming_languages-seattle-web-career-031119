@@ -7,7 +7,7 @@ def reformat_languages(languages)
     langs.each do |lang, types|
       if(result[lang])
         binding.pry
-        result[:style] << style
+        result[lang][:style] << style
       else 
         result[lang] = {
           type: types.values,
