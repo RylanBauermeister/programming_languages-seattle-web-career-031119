@@ -13,5 +13,5 @@ def reformat_languages(languages)
       end
     end
   end
-  
+  result
 end
