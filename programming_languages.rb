@@ -11,7 +11,7 @@ def reformat_languages(languages)
       else 
         result[lang] = {
           type: types.values,
-          style: style
+          style: [] << style
         }
       end
     end
